@@ -6,7 +6,7 @@
 header{
   width: auto;
   height: 100px;
-  background-ima: white;
+  background-image:url("header_gradient.png");
   color:black;
 }
 
