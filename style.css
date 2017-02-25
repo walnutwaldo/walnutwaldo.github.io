@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: auto;
+  height: 100px;
+  background-ima: white;
+  color:black;
+}
+
+nav{
+  width: auto;
+  height: 50px;
+  background-color: green;
+}
+
+footer{
+  width: auto;
+  height: 50px;
+  background-color: blue;
+}
