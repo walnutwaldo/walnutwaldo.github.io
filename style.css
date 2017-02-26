@@ -7,7 +7,7 @@
 header {
   height: 50px;
   background-color: black;
-  background-image:url("black-gradient.png");
+  background-image:url("res/black-gradient.png");
 }
 
 header div{
@@ -29,7 +29,7 @@ header h1{
 
 nav{
   background-color: white;
-  background-image:url("nav-gradient.png");
+  background-image:url("res/nav-gradient.png");
 }
 
 nav div{
@@ -58,7 +58,7 @@ ul li a{
 }
 
 ul li a.selected{
-    background-image:url("selected-tab-gradient.png");
+    background-image:url("res/selected-tab-gradient.png");
 }
 
 ul li a:hover:not(.selected){
@@ -72,12 +72,12 @@ article{
   width: auto;
   height: 1200px;
   background-color: #ebebeb;
-  background-image: url("article-gradient.png");
+  background-image: url("res/article-gradient.png");
 }
 
 section{
-  margin-top: 25px;
-  width: 1000px;
+  margin: 25px auto;
+  width: 950px;
   height:100px;
   background-color: #fafafa;
 }
@@ -86,5 +86,5 @@ footer{
   width: auto;
   height: 50px;
   background-color: black;
-  background-image:url("black-gradient.png");
+  background-image:url("res/black-gradient.png");
 }
