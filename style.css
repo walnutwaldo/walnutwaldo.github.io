@@ -68,10 +68,18 @@ ul li a:hover:not(.selected){
 }
 
 article{
+  padding-top: 25px;
   width: auto;
   height: 1200px;
   background-color: #ebebeb;
   background-image: url("article-gradient.png");
+}
+
+section{
+  margin-top: 25px;
+  width: 900px;
+  height:100px;
+  background-color: white;
 }
 
 footer{
