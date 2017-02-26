@@ -102,6 +102,10 @@ aside{
   float: right;
 }
 
+aside ul li h6 {
+  font-size:inherit;
+}
+
 footer{
   width: auto;
   height: 50px;
