@@ -96,6 +96,12 @@ section{
   margin: 10px 0;
 }
 
+aside{
+  height: inherit;
+  width: 500px;
+  float: right;
+}
+
 footer{
   width: auto;
   height: 50px;
