@@ -103,6 +103,8 @@ aside{
 }
 
 aside ul li h6 {
+  display: inline-block;
+  margin-right: 10px;
   font-size:inherit;
 }
 
