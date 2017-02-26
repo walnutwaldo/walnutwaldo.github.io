@@ -12,7 +12,7 @@ img{
 header {
   height: 50px;
   background-color: white;
-  background-image:url("header_gradient.PNG");
+  background-image:url("header-gradient.png");
 }
 
 header div{
@@ -34,7 +34,7 @@ header h1{
 
 nav{
   background-color: black;
-  background-image:url("nav_gradient.PNG");
+  background-image:url("nav-gradient.png");
 }
 
 nav div{
