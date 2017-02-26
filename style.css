@@ -6,8 +6,8 @@
 
 header {
   height: 50px;
-  background-color: white;
-  background-image:url("header-gradient.png");
+  background-color: black;
+  background-image:url("black-gradient.png");
 }
 
 header div{
@@ -28,7 +28,7 @@ header h1{
 }
 
 nav{
-  background-color: black;
+  background-color: white;
   background-image:url("nav-gradient.png");
 }
 
@@ -66,4 +66,5 @@ footer{
   width: auto;
   height: 50px;
   background-color: black;
+  background-image:url("black-gradient.png");
 }
