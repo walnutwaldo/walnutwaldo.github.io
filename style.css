@@ -50,16 +50,27 @@ ul li a{
   padding-right:20px;
   color:black;
   display: block;
-  height: 37px;
+  height: 40px;
   float: left;
   text-decoration: none;
   font-weight: bold;
   font-size: 17px;
 }
 
-ul li a:hover {
+ul li a.selected{
+    background-image:url("selected-tab-gradient.png");
+}
+
+ul li a:hover:not(:selected){
     background-color: #555;
     color: white;
+}
+
+article{
+  width: auto;
+  height: 1200px;
+  background-color: #ebebeb;
+  background-image: url("article-gradient.png");
 }
 
 footer{
