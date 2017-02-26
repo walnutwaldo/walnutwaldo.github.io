@@ -61,9 +61,10 @@ ul li a.selected{
     background-image:url("selected-tab-gradient.png");
 }
 
-ul li a:hover:not(:selected){
-    background-color: #555;
-    color: white;
+ul li a:hover:not(.selected){
+  height: 36px;
+  background-color: #555;
+  color: white;
 }
 
 article{
