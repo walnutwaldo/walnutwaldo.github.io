@@ -2,13 +2,13 @@
 <html>
 <head>
   <title>WalnutWaldo</title>
-  <link href="../style/style.css" rel="stylesheet"></link>
-  <link href = "../res/icon.png" rel="icon"></link>
+  <link href="style/style.css" rel="stylesheet"></link>
+  <link href = "res/icon.png" rel="icon"></link>
 </head>
 <body>
 <header>
   <div>
-    <img src= "../res/walnutwaldo-50px.png" alt="logo"/>
+    <img src= "res/walnutwaldo-50px.png" alt="logo"/>
     <h1>WalnutWaldo</h1>
   </div>
 </header>
@@ -16,10 +16,10 @@
   <div>
     <ul>
       <li>
-        <a href = "../html/index">Home</a>
+        <a href = "index.html">Home</a>
       </li>
       <li>
-        <a href = "../html/math" >Math</a>
+        <a href = "math" >Math</a>
       </li>
       <li>
         <a class = "selected">Programming</a>
