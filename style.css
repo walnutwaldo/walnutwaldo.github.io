@@ -77,9 +77,23 @@ article{
 
 section{
   margin: 25px auto;
+  padding: 15px;
   width: 950px;
-  height:100px;
+  height: 400px;
   background-color: #fafafa;
+}
+
+#nametag{
+  width: 350px;
+  float: left;
+}
+
+#nametag h2{
+  margin-bottom: 5px;
+}
+
+#nametag img{
+  margin: 10px 0;
 }
 
 footer{
