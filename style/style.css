@@ -257,3 +257,15 @@ footer{
   background-color: black;
   background-image:url("../res/black-gradient.png");
 }
+
+footer div{
+  width: 1000px;
+}
+
+footer p{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 10px;
+  float:right;
+  color:white;
+}
