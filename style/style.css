@@ -162,21 +162,16 @@ aside ul li h6 {
 }
 
 .upHalf{
-  width: auto;
+  width: 435px;
   height: 50px;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .bottomHalf{
-  width: auto;
-  height: 50px;
+  width: 435px;
+  height: auto;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  bottom: 15px;
 }
 
 .rightBar{
