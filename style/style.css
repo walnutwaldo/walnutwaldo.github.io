@@ -139,15 +139,15 @@ aside ul li h6 {
 .main .smallBoxLeft{
   position: relative;
   float: left;
-  margin: 25px 25px 25px 10px;
-  width: 445px;
+  margin: 25px 12.5px 25px 10px;
+  width: 465px;
 }
 
 .main .smallBoxRight{
   position: relative;
   float: right;
-  margin: 25px 10px 25px 25px;
-  width: 445px;
+  margin: 25px 10px 25px 12.5px;
+  width: 465px;
 }
 
 .headingTwo {
