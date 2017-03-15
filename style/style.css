@@ -124,6 +124,13 @@ section{
     height: 400px;
 }
 
+.main .hugeBox{
+    margin: 25px auto;
+    padding: 15px;
+    width: 950px;
+    height: 1000px;
+}
+
 article .main{
   width: 1000px;
   height: auto;
