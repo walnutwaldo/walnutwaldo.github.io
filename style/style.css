@@ -15,6 +15,7 @@ header {
 }
 
 header div{
+  position: relative;
   display: flex;
   width:1000px;
 }
@@ -27,8 +28,35 @@ header img{
 header h1{
   align-self: flex-start;
   margin: 2px 0 0 20px;
-  color:white;
   font-size: 30px;
+  color:white;
+}
+
+header ul{
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: 50px;
+  list-style-type: none;
+}
+
+header li {
+  display: inline-block;
+  padding: auto 10px;
+  height: 50px;
+}
+
+header a{
+  width: auto;
+  color:#dddddd;
+  text-align: center;
+  padding-top: 13px;
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+header a:hover{
+  color: #ffffff;
 }
 
 nav{
@@ -41,7 +69,7 @@ nav div{
   height: 50px;
 }
 
-ul {
+nav ul {
   width: auto;
   height: 50px;
   margin-left: 0;
@@ -55,7 +83,7 @@ a{
   font-weight: bold;
 }
 
-ul li a{
+nav ul li a{
   padding-top: 10px;
   padding-left: 20px;
   padding-right:20px;
@@ -64,11 +92,11 @@ ul li a{
   font-size: 17px;
 }
 
-ul li a.selected{
+nav ul li a.selected{
     background-image:url("../res/selected-tab-gradient.png");
 }
 
-ul li a:hover:not(.selected){
+nav ul li a:hover:not(.selected){
   height: 36px;
   background-color: #555;
   color: white;
@@ -120,6 +148,10 @@ aside{
   float: right;
 }
 
+aside ul{
+  list-style-type: none;
+}
+
 aside ul li p{
   margin-bottom: 10px;
 }
@@ -140,20 +172,24 @@ aside ul li h6 {
   width: 100%;
 }
 
-.main .smallBoxLeft{
+.main .smallBox{
   position: relative;
-  float: left;
-  margin: 25px 12.5px 25px 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 435px;
-  height: 400px;
+  height: 200px;
 }
 
-.main .smallBoxRight{
-  position: relative;
+.left {
+  margin-right: 12.5px;
+  margin-left: 10px;
+  float: left;
+}
+
+.right {
+  margin-left: 12.5px;
+  margin-right: 10px;
   float: right;
-  margin: 25px 10px 25px 12.5px;
-  width: 435px;
-  height: 400px;
 }
 
 .headingTwo {
@@ -200,6 +236,12 @@ aside ul li h6 {
 .blogHeader{
   margin-top: 25px;
   height: 300px;
+}
+
+.centered{
+  line-height: 150%;
+  margin-top: 20px;
+  text-align: center;
 }
 
 footer{
