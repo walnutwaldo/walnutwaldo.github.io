@@ -1,9 +1,21 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <link rel="import" href="html/header.html">
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+$(function(){
+    $("#header").load("header.html");
+    $("#top").load("top.html");
+    $("#footer").load("footer.html");
+});
+</script>
+<div id="header"></div>
 </head>
-<link rel="import" href="html/top.html">
+<div id="top"></div>
 <body>
     <nav>
         <div>
@@ -74,9 +86,6 @@
         </section>
       </div>
     </article>
-    <link rel="import" href="/html/footer.html">
+    <div id="footer"></div>
 </body>
 </html>
-<script>
-var content = document.querySelector('link[rel="import"]').import;
-</script>
