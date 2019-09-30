@@ -1,2 +1,1 @@
-# WalnutWaldo's Site
-Just a personal website
+My very out of date personal site.
