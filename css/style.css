@@ -15,10 +15,11 @@ header {
   background-image:url("../res/black-gradient.png");
 }
 
-header div{
+#header_container{
   position: relative;
   display: flex;
-  width:1000px;
+  width: auto;
+  max-width:1000px;
 }
 
 header img{
