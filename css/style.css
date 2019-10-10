@@ -1,10 +1,10 @@
-*{
+* {
   margin: 0 auto 0 auto;
   padding: 0;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-body{
+body {
   background-color: black;
 }
 
@@ -15,57 +15,39 @@ header {
   background-image:url("../res/black-gradient.png");
 }
 
-#header-container{
+#header-container {
   position: relative;
   display: flex;
   max-width:1000px;
 }
 
-header img{
+header img {
   margin: auto 10px auto 20px;
   align-self: flex-start;
 }
 
-header h1{
+header h1 {
   align-self: flex-start;
   margin: 2px 0 0 20px;
   font-size: 30px;
   color:white;
 }
 
-header ul{
-  position: absolute;
-  right: 0;
-  width: auto;
-  height: 50px;
-  list-style-type: none;
+header h2 {
+  align-self: flex-end;
+  margin: 5px 20px 5px auto;
+  font-size: 20px;
+  color: #d0d0d0;
 }
 
-header li {
-  display: inline-block;
-  padding: auto 10px;
-  height: 50px;
-}
-
-.header-link{
-  width: auto;
-  color:#dddddd;
-  text-align: center;
-  padding-top: 13px;
-  padding-left: 20px;
-  padding-right:20px;
-}
-
-.header-link:hover{
-  color: #ffffff;
-}
-
-nav{
+nav {
   background-color: white;
-  background-image:url("../res/nav-gradient.png");
+  border-bottom: 1px solid;
+  border-bottom-color: gray;
+  box-sizing: border-box;
 }
 
-nav div{
+nav div {
   width: 1000px;
   height: 50px;
 }
@@ -84,31 +66,40 @@ a {
   display: block;
 }
 
-#header-hp-link{
+#header-hp-link {
     display: flex;
     margin: 0px;
 }
 
-nav ul li a{
+nav ul li a {
   padding-top: 10px;
   padding-left: 20px;
   padding-right:20px;
-  height: 40px;
+  border-bottom: 5px;
+  height: 50px;
   float: left;
   font-size: 17px;
+  transition: 0.2s;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 
-nav ul li a.selected{
+nav ul li a.selected {
     background-image:url("../res/selected-tab-gradient.png");
 }
 
-nav ul li a:hover:not(.selected){
+nav ul li a:hover:not(.selected) {
+  height: 50px;
+  color: #555;
+}
+
+nav ul li a:hover:not(.selected):after {
   height: 36px;
   background-color: #555;
   color: white;
 }
 
-article{
+article {
   display: flex;
   padding: 25px 0 25px 0;
   width: auto;
