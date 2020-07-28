@@ -46,6 +46,15 @@ header nav li:not(.selected) a:hover {
   font-weight: bold;
 }
 
+/* medium and large */
+@media (min-width: 768px) {
+
+  header {
+    padding-bottom: 5px;
+  }
+  
+}
+
 /* large */
 @media (min-width: 992px) {
 
