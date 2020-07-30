@@ -1,0 +1,56 @@
+#nav-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  width: 60px;
+  height: 60px;
+  border: none !important;
+  outline: none !important;
+}
+
+.hamburger, .hamburger:before, .hamburger:after {
+  width: 40px;
+  height: 4px;
+  background: white;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  border-radius: 2px;
+  transition: 0.5s;
+}
+
+.hamburger {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hamburger:before, .hamburger:after {
+  content: '';
+  transform: translate(-50%, 0);
+}
+
+#nav-button.active .hamburger {
+  background: none;
+  box-shadow: none;
+}
+
+.hamburger:before {
+  top: -15px;
+}
+
+#nav-button.active .hamburger:before {
+  transform-origin: center;
+  transform: translate(-50%, 0) rotate(45deg);
+  top: 0;
+}
+
+#nav-button.active .hamburger:after {
+  transform-origin: center;
+  transform: translate(-50%, 0) rotate(-45deg);
+  top: 0;
+}
+
+.hamburger:after {
+  top: 15px;
+}

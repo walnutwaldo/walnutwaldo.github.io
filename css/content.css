@@ -4,8 +4,18 @@ body {
 	font-family: 'Zilla Slab', serif;
 }
 
-#centering {
+#mobile-socials {
 	text-align: center;
+	padding-bottom: 15px;
+}
+
+#mobile-socials .addthis_toolbox {
+	width: auto;
+	display: inline-flex;
+}
+
+#centering {
+	float: center;
 }
 
 #container {
@@ -37,17 +47,6 @@ body {
 .quote {
 	text-align: center;
 	margin-top: 50px;
-}
-
-.carousel-caption-custom > p > a {
-	color: white;
-	text-decoration: underline;
-}
-
-.carousel-caption-custom > p > a:hover {
-	color: white;
-	font-weight: bold;
-	text-decoration: underline;
 }
 
 .link-row {
@@ -100,91 +99,6 @@ body {
 	margin: 0;
 }
 
-.carousel {
-	background: gray;
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-}
-
-.carousel-item-custom {
-	width: 100%;
-	display: none;
-	position: relative;
-}
-
-.carousel-item-custom.active {
-	display: block;
-}
-
-.carousel-caption-custom {
-	position: absolute;
-	color: white;
-	background: #191919e0;
-}
-
-.carousel-button {
-	position: absolute;
-	bottom: 0;
-	top: 0;
-	width: 15%;
-	text-align: center;
-	background: none;
-	border: none !important;
-	outline: none !important;
-	display: block;
-	z-index: 10;
-}
-
-.carousel-button:hover > p {
-	transition: all 0.3s;
-	font-size: 1.1em;
-}
-
-.carousel-button.next-button {
-	right: 0;
-}
-
-.carousel-button > p {
-	font-weight: bold;
-	color: white;
-	display: block;
-	position: relative;
-	top: 50%;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-.carousel-position-indicators {
-	text-align: center;
-	position: absolute;
-	bottom: 5%;
-	left: 20%;
-	right: 20%;
-	z-index: 5;
-}
-
-.carousel-position-indicator {
-	border-radius: 50%;
-	background: transparent;
-	border: solid white;
-	outline: none !important;
-	transition: all 0.3s;
-}
-
-.carousel-position-indicator:not(.active):hover {
-	background: #ffffff80;
-	transition: all 0.3s;
-}
-
-.carousel-position-indicator.active:hover {
-	cursor: default;
-}
-
-.carousel-position-indicator.active {
-	background: white;
-}
-
 /* large */
 @media (min-width: 992px) {
 
@@ -204,29 +118,6 @@ body {
 		font-size: 3vw;
 	}
 
-	.carousel-button {
-		font-size: 7vw;
-	}
-
-	.carousel-caption-custom {
-		padding: 2vw 15% 2vw 2vw;
-		top: 15%;
-		right: 0;
-		left: 50%;
-		font-size: 1.5vw;
-	}
-
-	.carousel-caption-custom h5 {
-		font-size: 2.5vw;
-	}
-
-	.carousel-position-indicator {
-		width: 3vw;
-		height: 3vw;
-		border-width: 0.4vw;
-		margin: 0 1.5vw;
-	}
-
 }
 
 /* medium */
@@ -244,50 +135,14 @@ body {
 		padding-bottom: 50%;
 	}
 
-	.carousel-button {
-		font-size: 75px;
-	}
-
 	.quote {
 		font-size: 24px;
-	}
-
-	.carousel-caption-custom {
-		padding: 20px 20px 50px 20px;
-		bottom: 15px;
-		color: white;
-		font-size: 16px;
-		text-align: center;
-		left: 15%;
-		right: 15%;
-	}
-
-	.carousel-caption-custom h5 {
-		font-size: 20px;
-	}
-
-	.carousel-position-indicator {
-		width: 30px;
-		height: 30px;
-		border-width: 4px;
-		margin: 0 15px;
 	}
 
 }
 
 @media (max-width: 767px) {
-
-	.carousel-caption-custom {
-		position: static;
-		padding: 20px;
-		font-size: 16px;
-		height: 240px;
-	}
-
-	.carousel-caption-custom h5 {
-		font-size: 20px;
-	}
-
+	
 	.link-box {
 		font-size: 20px;
 	}
@@ -304,29 +159,27 @@ body {
 		padding-bottom: 100%;
 	}
 
-	.carousel-button {
-		display: none;
-	}
-
 }
 
 /* xs */
 @media (max-width: 575px) {
 
 	.link-image {
-		margin: 15px;
+		margin: 20px;
 	}
 
 	.link-box {
+		margin-top: 30px;
 		font-size: 16px;
 	}
 
 	.link-image h3 {
 		font-size: 20px;
-		margin: 0 -15px;
+		margin: 0 -20px;
 	}
 
 	.quote {
 		font-size: 16px;
+		margin-top: 30px;
 	}
 }

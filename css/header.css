@@ -1,5 +1,5 @@
 header {
-  background-color: #860e0e;
+  background-color: #393939;
 }
 
 #upper-header {
@@ -10,7 +10,7 @@ header {
 header h1 {
   display: inline-block;
   vertical-align: top;
-  color: #1f0505;
+  color: #191919;
   position: relative;
 }
 
@@ -19,15 +19,62 @@ header nav {
 }
 
 header nav li {
-  display: inline-block;
+  display: block;
 }
 
 header nav li.selected {
-  background-color: #ab3333;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  pointer-events: none;
   cursor: default;
+  pointer-events: none;
+  background-color: #ab3333;
+}
+
+@media(min-width: 768px) {
+  header, header nav li.selected {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  header nav li.selected {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+@media(max-width: 767px) {
+
+  header nav {
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+    z-index: 10;
+    background: #191919e0;
+    padding: 10px 0;
+  }
+
+  header nav, header nav li {
+    transition: 0.5s;
+  }
+
+  header nav:not(.active), header nav:not(.active) * {
+    opacity: 0;
+    display: none;
+  }
+
+  header nav li.selected {
+    border-radius: 10px;
+    border: solid 2px white;
+  }
+
+  header nav li {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  header nav li a {
+    display: block;
+    padding: 0px 10px 5px;
+  }
+
 }
 
 header nav li a {
@@ -67,9 +114,13 @@ header nav li:not(.selected) a:hover {
   }
 
   header nav li {
-    height: 5.7vw;
-    padding: 0.5vw 1.5vw;
     margin-bottom: 0.5vw;
+  }
+
+  header nav li a {
+    display: block;
+    height: 5.7vw;
+    padding: 1vw 1.5vw;
   }
 
   header img {
@@ -97,15 +148,14 @@ header nav li:not(.selected) a:hover {
 
   header nav li {
     width: 25%;
-    height: 10vw;
     text-align: center;
-    padding: 1vw 1.5vw;
     margin-bottom: 0.5vw;
   }
 
   header nav li a {
-    position: relative;
-    top: 5px;
+    display: block;
+    height: 10vw;
+    padding: 1.7vw 1.5vw;
   }
 
   header img {
@@ -124,18 +174,18 @@ header nav li:not(.selected) a:hover {
 @media (max-width: 767px) {
 
   #upper-header {
-    height: 100px;
+    height: 80px;
   }
 
   header img {
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     margin: 15px 0;
   }
 
   header h1 {
-    font-size: 40px;
-    margin-top: 40px;
+    font-size: 30px;
+    margin-top: 30px;
   }
 
 }
