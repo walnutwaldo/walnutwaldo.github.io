@@ -180,6 +180,9 @@
 		ajaxUtils.sendGetRequest("res/carousel/items.json", function(response){
 			setup_carousel(JSON.parse(response.response));
 		});
+		$(".carousel").on("swiperight", function(event) {
+			console.log("hi");
+		});
 
 	}
 
