@@ -30,7 +30,7 @@
   transform: translate(-50%, 0);
 }
 
-#nav-button.active .hamburger {
+.hamburger.active {
   background: none;
   box-shadow: none;
 }
@@ -39,13 +39,13 @@
   top: -15px;
 }
 
-#nav-button.active .hamburger:before {
+.hamburger.active:before {
   transform-origin: center;
   transform: translate(-50%, 0) rotate(45deg);
   top: 0;
 }
 
-#nav-button.active .hamburger:after {
+.hamburger.active:after {
   transform-origin: center;
   transform: translate(-50%, 0) rotate(-45deg);
   top: 0;
