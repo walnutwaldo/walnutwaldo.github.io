@@ -1,1 +1,1 @@
-My personal site (work in progress)
+My (outdated) personal site
